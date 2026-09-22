@@ -1,0 +1,4977 @@
+{
+  "operations": [
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.api.ttp.delete-platforms",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/api/ttp/deletePlatforms",
+      "query_params": [
+        "pId"
+      ],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.api.ttp.delete-technique",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/api/ttp/deleteTechnique",
+      "query_params": [
+        "techId"
+      ],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.api.ttp.delete-threat-groups",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/api/ttp/deleteThreatGroups",
+      "query_params": [
+        "tgId"
+      ],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.allowlist.custom-field.by-id",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/allowlist/custom_field/{id}",
+      "query_params": [
+        "org"
+      ],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.allowlist.global-entry.by-id",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/allowlist/global_entry/{id}",
+      "query_params": [
+        "org",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.allowlist.global.field",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/allowlist/global/field",
+      "query_params": [
+        "org",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": true,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.allowlist.rule-entry.by-id",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/allowlist/rule_entry/{id}",
+      "query_params": [
+        "org",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.allowlist.rule.by-rule-id.field",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/allowlist/rule/{rule_id}/field",
+      "query_params": [
+        "org",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": true,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.fetch.eoi.spotlights",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/fetch/eoi/spotlights",
+      "query_params": [
+        "eoi_spotlights_id"
+      ],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.insights.hunting.automation.escalate.by-id",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/insights/hunting/automation/escalate/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.insights.tuning.automation.accept.by-id",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/insights/tuning/automation/accept/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.org.by-org-id.insights.health.by-id",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/org/{org_id}/insights/health/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.org.by-org-id.insights.hunting.by-id",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/org/{org_id}/insights/hunting/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.org.by-org-id.insights.tuning.by-id",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/org/{org_id}/insights/tuning/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.triage.alert.automation.by-id",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/triage/alert/automation/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.triage.alert.custom-status.by-id",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/triage/alert/custom_status/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.triage.analyzer.automation.by-id",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/triage/analyzer/automation/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "delete.services.triage.suppression.by-id",
+      "last_verified": "2026-09-22",
+      "method": "DELETE",
+      "path": "/services/triage/suppression/{id}",
+      "query_params": [
+        "org"
+      ],
+      "request_body": false,
+      "risk": "destructive"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.ai.sessions.v4.ext.session.by-session-id",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/ai/sessions/v4/ext/session/{session_id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.ai.sessions.v4.ext.session.by-session-id.message.by-message-id",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/ai/sessions/v4/ext/session/{session_id}/message/{message_id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.analytic.has-name",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/hasName",
+      "query_params": [
+        "name",
+        "type"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.analytic.not-editable-in-rules",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/notEditableInRules",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.analytic.rule-history",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/ruleHistory",
+      "query_params": [
+        "id",
+        "limit",
+        "offset",
+        "versionsOnly"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.analytic.rule-info",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/ruleInfo",
+      "query_params": [
+        "ruleid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.analytic.rule-rating",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/ruleRating",
+      "query_params": [
+        "hash",
+        "ruleid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.analytic.rule-stats",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/ruleStats",
+      "query_params": [
+        "hash",
+        "ruleid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.analytic.rule-version",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/ruleVersion",
+      "query_params": [
+        "hash",
+        "ruleid",
+        "skipSaved",
+        "type"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.analytic.rule-versions",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/ruleVersions",
+      "query_params": [
+        "limit",
+        "ruleid",
+        "type"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.analytic.rules-for-domain",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/rulesForDomain",
+      "query_params": [
+        "rule_domain",
+        "use_case_id"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.analytic.rules-not-in-uc-org",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/rulesNotInUcOrg",
+      "query_params": [
+        "use_case_id"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.analytic.use-case",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/useCase",
+      "query_params": [
+        "usecaseid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.analytic.use-case-counts",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/useCaseCounts",
+      "query_params": [
+        "taskOnly"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.analytic.use-case-rules",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/useCaseRules",
+      "query_params": [
+        "useCaseId"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.app.deployment-json",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/app/deploymentJSON",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.app.rule-inventory",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/app/ruleInventory",
+      "query_params": [
+        "full"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.armory.custom-pack",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/armory/customPack",
+      "query_params": [
+        "id"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.armory.detection-pack",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/armory/detectionPack",
+      "query_params": [
+        "id"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.armory.detection-packs",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/armory/detectionPacks",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.audit.list",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/audit/list",
+      "query_params": [
+        "action",
+        "email",
+        "end_time",
+        "limit",
+        "obj_type",
+        "offset",
+        "start_time"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.audit.recently-viewed",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/audit/recentlyViewed",
+      "query_params": [
+        "limit"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.authentication.version",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/authentication/version",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.collab.comments",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/collab/comments",
+      "query_params": [
+        "id",
+        "limit",
+        "objType",
+        "offset",
+        "ruleid",
+        "since"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.download.artifact",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/download/artifact",
+      "query_params": [
+        "filename"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.download.content-support",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/download/contentSupport",
+      "query_params": [
+        "id",
+        "location",
+        "type"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.info.organization",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/info/organization",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.info.organization-details",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/info/organizationDetails",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.info.user",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/info/user",
+      "query_params": [
+        "detailed"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.macro.macro-info",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/macro/macroInfo",
+      "query_params": [
+        "macroId",
+        "macroName",
+        "prompt"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.macro.macro-stats",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/macro/macroStats",
+      "query_params": [
+        "hash",
+        "macroid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.macro.macro-version",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/macro/macroVersion",
+      "query_params": [
+        "hash",
+        "macroId",
+        "prompt"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.macro.macro-versions",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/macro/macroVersions",
+      "query_params": [
+        "limit",
+        "macroId",
+        "type"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.macro.org-macro-ids",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/macro/orgMacroIds",
+      "query_params": [
+        "parentMacroId"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.notification.list",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/notification/list",
+      "query_params": [
+        "since"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.org.get-auto-tirec-count",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/org/getAutoTIRecCount",
+      "query_params": [
+        "dataCategories",
+        "scoreThreshold"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.org.get-countries",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/org/getCountries",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.org.get-industries",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/org/getIndustries",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.org.get-siem-config",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/org/getSiemConfig",
+      "query_params": [
+        "deployment_id"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.org.list-siem-configs",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/org/listSiemConfigs",
+      "query_params": [
+        "type"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.org.relations",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/org/relations",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.priorities.alert-data",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/alertData",
+      "query_params": [
+        "numDays"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.priorities.analyst-data",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/analystData",
+      "query_params": [
+        "numDays"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.priorities.dc-coverage",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/dcCoverage",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.priorities.detections-coverage",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/detectionsCoverage",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.priorities.get",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/get",
+      "query_params": [
+        "type"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.priorities.get-platforms",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/getPlatforms",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.priorities.get-score",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/getScore",
+      "query_params": [
+        "incRuleFeedInfo"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.priorities.score-history",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/scoreHistory",
+      "query_params": [
+        "endDate",
+        "startDate"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.priorities.supported-data-categories",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/supportedDataCategories",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.proposal.cron-recommendation",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/proposal/cronRecommendation",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.proposal.detail",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/proposal/detail",
+      "query_params": [
+        "proposalId"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.proposal.list",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/proposal/list",
+      "query_params": [
+        "recommendationType"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.proposal.ts-builder-long-proposal",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/proposal/tsBuilderLongProposal",
+      "query_params": [
+        "proposalId"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.recommendation.follow-through-recommendations",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/recommendation/followThroughRecommendations",
+      "query_params": [
+        "dataCategory",
+        "endDate",
+        "followUpAction",
+        "ruleId",
+        "startDate",
+        "useCaseId"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.task.activity",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/task/activity",
+      "query_params": [
+        "limit",
+        "offset",
+        "taskId"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.task.assignees",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/task/assignees",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.task.get",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/task/get",
+      "query_params": [
+        "taskId"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.task.inventory",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/task/inventory",
+      "query_params": [
+        "limit",
+        "offset"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.task.list",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/task/list",
+      "query_params": [
+        "limit",
+        "offset",
+        "orgView",
+        "taskStatus"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.current-membership",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/currentMembership",
+      "query_params": [
+        "groupid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.details",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/details",
+      "query_params": [
+        "groupid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.details-new",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/detailsNew",
+      "query_params": [
+        "groupid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.list-member-of",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/listMemberOf",
+      "query_params": [
+        "orgid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.trusted-groups.list-owned-by",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/listOwnedBy",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.mygroups",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/mygroups",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.proposal-status",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/proposalStatus",
+      "query_params": [
+        "groupid",
+        "orgid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.rcvd-unsolicited-requests",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/rcvdUnsolicitedRequests",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.received-proposals",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/receivedProposals",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.sent-invitations-pending",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/sentInvitationsPending",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.sent-proposals",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/sentProposals",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.sent-unsolicited-requests",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/sentUnsolicitedRequests",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.visible-groups",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/visibleGroups",
+      "query_params": [
+        "limit",
+        "offset"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.trusted-groups.visible-orgs",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/visibleOrgs",
+      "query_params": [
+        "groupid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.ttp.clone-tg",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/ttp/cloneTG",
+      "query_params": [
+        "name"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.api.ttp.get-ttp-info",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/ttp/getTtpInfo",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.api.user.profile",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/user/profile",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.pipelines.jobs",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/pipelines/v1/jobs",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.pipelines.supported",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/pipelines/v1/supported",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.ai.copilot.tools",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/ai/agent/copilot/tools",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.ai.search-agent.tools",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/ai/agent/search_agent/tools",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.allowlist.audit-log",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/allowlist/audit_log",
+      "query_params": [
+        "end_time",
+        "event_category",
+        "orgs",
+        "rule_id",
+        "start_time"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.allowlist.custom-field",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/allowlist/custom_field",
+      "query_params": [
+        "orgs"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.allowlist.exports",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/allowlist/exports",
+      "query_params": [
+        "rule_id",
+        "type_"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.allowlist.global-entry",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/allowlist/global_entry",
+      "query_params": [
+        "orgs"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.allowlist.global-entry.by-id",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/allowlist/global_entry/{id}",
+      "query_params": [
+        "orgs"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.allowlist.global.fields",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/allowlist/global/fields",
+      "query_params": [
+        "orgs"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.allowlist.rule",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/allowlist/rule",
+      "query_params": [
+        "limit",
+        "offset",
+        "orgs"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.allowlist.rule-entry",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/allowlist/rule_entry",
+      "query_params": [
+        "orgs",
+        "rule_format",
+        "rule_id"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.allowlist.rule.by-rule-id.fields",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/allowlist/rule/{rule_id}/fields",
+      "query_params": [
+        "orgs"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.allowlist.summary",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/allowlist/summary",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.case.metadata",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/case/metadata",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.feature-flag",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/feature-flag",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.fetch.eoi.alert-break-down",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/alert-break-down",
+      "query_params": [
+        "end_date",
+        "start_date",
+        "vendor"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.fetch.eoi.analysis.summary",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/analysis/summary",
+      "query_params": [
+        "end_date",
+        "event_analysis",
+        "event_type",
+        "limit",
+        "sort_direction",
+        "start_date"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.fetch.eoi.check-org-existence",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/check-org-existence",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.fetch.eoi.events",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/events",
+      "query_params": [
+        "event_ids"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.fetch.eoi.spotlights",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/spotlights",
+      "query_params": [
+        "end_date",
+        "start_date",
+        "status"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.fetch.eoi.spotlights.by-ids",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/spotlights/by-ids",
+      "query_params": [
+        "ids"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.fetch.eoi.spotlights.status-count",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/spotlights/status-count",
+      "query_params": [
+        "end_date",
+        "start_date"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.fetch.eoi.summary.funnel",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/summary/funnel",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.fetch.eoi.top.summary",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/top/summary",
+      "query_params": [
+        "end_date",
+        "event_type",
+        "limit",
+        "sort_direction",
+        "start_date",
+        "vendor"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.fetch.eoi.use-case-frequency",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/use-case-frequency",
+      "query_params": [
+        "spotlight_insert_id",
+        "use_case_id"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.fetch.eoi.vendors",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/vendors",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.insights.health",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/health",
+      "query_params": [
+        "end_date",
+        "start_date"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.insights.health-types",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/health/types",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.insights.health.by-id",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/health/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.insights.health.by-id.past-occurrences",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/health/{id}/past_occurrences",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.insights.hunting.by-id",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/hunting/{id}",
+      "query_params": [
+        "include_deleted"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.insights.hunting.latest-escalation",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/hunting/automation/escalate/latest",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.insights.hunting.summary",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/hunting/summary",
+      "query_params": [
+        "end_date",
+        "start_date"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.insights.hunting.types",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/hunting/types",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.insights.summary",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/summary",
+      "query_params": [
+        "days",
+        "types"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.insights.summary.by-date",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/summary/by_date",
+      "query_params": [
+        "days",
+        "types"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.insights.tuning.by-id.accept.by-job-id",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/tuning/{id}/accept/{job_id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.insights.tuning.latest-acceptance",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/tuning/automation/accept/latest",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.insights.tuning.summary",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/tuning/summary",
+      "query_params": [
+        "end_date",
+        "start_date"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.insights.tuning.types",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/tuning/types",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.monte.copilot.analysis.entity.by-id",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/monte/copilot/analysis/entity/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.monte.copilot.analysis.threat-identifier.by-id",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/monte/copilot/analysis/threat_identifier/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.monte.copilot.analysis.threat-identifier.factsheet.by-id",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/monte/copilot/analysis/threat_identifier/factsheet/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.monte.copilot.analysis.threat-scenario.by-id",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/monte/copilot/analysis/threat_scenario/{id}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.monteai.copilot-license",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/monteai/copilot/license",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.msp.orgs.allowlist",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/msp/orgs/allowlist",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.msp.orgs.by-service",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/msp/orgs/{service}",
+      "query_params": [
+        "permission"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.msp.orgs.triage",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/msp/orgs/triage",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.platform.setting",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/platform/setting/{setting_name}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.setting.by-setting-name",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/setting/{setting_name}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.settings",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/settings",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.triage.alert.audit-logs",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/audit_logs",
+      "query_params": [
+        "alert_id",
+        "limit",
+        "mode",
+        "offset"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.triage.alert.automation",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/automation",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.triage.alert.automation-metadata",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/automation/metadata",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.triage.alert.bulk-update-status",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/bulk_update_status",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.triage.alert.by-alert-id",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/{alert_id}",
+      "query_params": [
+        "include",
+        "mode",
+        "skip_cache"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.triage.alert.by-alert-id.comments",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/{alert_id}/comments",
+      "query_params": [
+        "limit",
+        "mode",
+        "offset",
+        "sort_order"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.triage.alert.by-alert-id.report",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/{alert_id}/report",
+      "query_params": [
+        "mode"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.triage.alert.by-alert-id.report.feedback",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/{alert_id}/report/feedback",
+      "query_params": [
+        "mode"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.triage.alert.by-alert-id.report.regenerate.status",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/{alert_id}/report/regenerate/status",
+      "query_params": [
+        "mode"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.triage.alert.custom-status",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/custom_status",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.triage.alert.event-details",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/event_details",
+      "query_params": [
+        "event_id",
+        "mode",
+        "use_case_type"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.triage.alert.event-timeline",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/event_timeline",
+      "query_params": [
+        "alert_id",
+        "mode"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.triage.alert.status",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/status",
+      "query_params": [
+        "common_only",
+        "for_suppression_annotation",
+        "orgs"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.triage.analyzer.automation",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/analyzer/automation",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.triage.analyzer.automation-field-meta",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/analyzer/automation/field_meta",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.triage.suppression",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/suppression",
+      "query_params": [
+        "orgs"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.tuning-recommendations.count",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/tuning-recommendations/count",
+      "query_params": [
+        "end_date",
+        "start_date"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.tuning-recommendations.list",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/tuning-recommendations/list",
+      "query_params": [
+        "end_date",
+        "start_date"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.tuning-recommendations.row",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/tuning-recommendations/row",
+      "query_params": [
+        "insert_id"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.tuning-recommendations.status-stats",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/tuning-recommendations/status-stats",
+      "query_params": [
+        "end_date",
+        "start_date"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "get.services.v1.eoi.schema",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/v1/eoi/schema",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.v1.fetch.eoi.spotlights",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/v1/fetch/eoi/spotlights",
+      "query_params": [
+        "confidence",
+        "end_date",
+        "limit",
+        "offset",
+        "start_date",
+        "status",
+        "subtype"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "get.services.v1.tuning-recommendations.list",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/v1/tuning-recommendations/list",
+      "query_params": [
+        "allowlist_expiry",
+        "confidence",
+        "end_date",
+        "limit",
+        "offset",
+        "start_date",
+        "status",
+        "subtype"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.strix.connector.list",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/strix/ai/mgmt/v2/connector",
+      "query_params": [
+        "include_actions"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.strix.connector.mcp-custom",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/strix/ai/mgmt/v2/connector/mcp/custom",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "get.waygate.connected",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/waygate/connected",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.allowlist.global-entry.by-id",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/allowlist/global_entry/{id}",
+      "query_params": [
+        "org",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.allowlist.global-entry.by-id.disable",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/allowlist/global_entry/{id}/disable",
+      "query_params": [
+        "org",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.allowlist.rule-entry.by-id",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/allowlist/rule_entry/{id}",
+      "query_params": [
+        "org",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.allowlist.rule-entry.by-id.disable",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/allowlist/rule_entry/{id}/disable",
+      "query_params": [
+        "org"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.insights.health.by-id.status",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/insights/health/{id}/status",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.insights.hunting.by-id",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/insights/hunting/{id}",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.insights.hunting.by-id.dismiss",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/insights/hunting/{id}/dismiss",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.insights.hunting.by-id.escalate.by-job-id",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/insights/hunting/{id}/escalate/{job_id}",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.insights.tuning.by-id",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/insights/tuning/{id}",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.insights.tuning.by-id.accept.edit",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/insights/tuning/{id}/accept/edit",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.triage.alert",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/triage/alert",
+      "query_params": [
+        "case",
+        "case_id",
+        "mode"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.triage.alert.automation.by-id",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/triage/alert/automation/{id}",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.triage.alert.by-alert-id.report",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/triage/alert/{alert_id}/report",
+      "query_params": [
+        "mode"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.triage.alert.custom-status.by-id",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/triage/alert/custom_status/{id}",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.triage.analyzer.automation.by-id",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/triage/analyzer/automation/{id}",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.triage.suppression.by-id",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/triage/suppression/{id}",
+      "query_params": [
+        "org"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "patch.services.triage.suppression.by-id.disable",
+      "last_verified": "2026-09-22",
+      "method": "PATCH",
+      "path": "/services/triage/suppression/{id}/disable",
+      "query_params": [
+        "org"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.ai.sessions.v4.ext.session",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/ai/sessions/v4/ext/session",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.ai.sessions.v4.ext.session.by-session-id.message",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/ai/sessions/v4/ext/session/{session_id}/message",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.ai.sessions.v4.ext.session.search",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/ai/sessions/v4/ext/session/search",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.cancel-deployment",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/cancelDeployment",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.create-rule",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/createRule",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.create-use-case",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/createUseCase",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.delete-draft",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/deleteDraft",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.edit-use-case",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/editUseCase",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.generate-logic",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/generateLogic",
+      "query_params": [
+        "rule_format",
+        "rule_id",
+        "use_case_id"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.save-rule",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/saveRule",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.save-rule-deployment-status",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/saveRuleDeploymentStatus",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.save-rule-rating",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/saveRuleRating",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.set-rule-sharing",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/setRuleSharing",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.set-use-case-sharing",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/setUseCaseSharing",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.update-parent-rule-status",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/updateParentRuleStatus",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.update-scenarios",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/updateScenarios",
+      "query_params": [
+        "action",
+        "proposalId"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.analytic.validate-rules",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/analytic/validateRules",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.app.add-content",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/app/addContent",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.app.deployment-cancelled",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/app/deploymentCancelled",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.app.mark-deployed",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/app/markDeployed",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.armory.deploy",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/armory/deploy",
+      "query_params": [
+        "redeploy"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.armory.deploy-rule",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/armory/deployRule",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.authentication.login",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/authentication/login",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.authentication.saml.sso",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/authentication/saml/SSO",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "post.api.cloudapp.get-users",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/cloudapp/getUsers",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.collab.add",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/collab/add",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.macro.cancel-deployment",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/macro/cancelDeployment",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.macro.create",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/macro/create",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.macro.delete",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/macro/delete",
+      "query_params": [
+        "macroId"
+      ],
+      "request_body": false,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.macro.enrich-data",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/macro/enrichData",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.macro.gather-data",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/macro/gatherData",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.macro.get-gsbtables",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/macro/getGSBTables",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.macro.normalize-data",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/macro/normalizeData",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.macro.save-deployment-status",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/macro/saveDeploymentStatus",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.macro.save-macro",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/macro/saveMacro",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.org.save-deployment-defaults",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/org/saveDeploymentDefaults",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.org.update-productivity-target",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/org/updateProductivityTarget",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.priorities.compute-feed-score",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/priorities/computeFeedScore",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.priorities.delete-feeds",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/priorities/deleteFeeds",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.priorities.save-feeds",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/priorities/saveFeeds",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.priorities.set-data-category",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/priorities/setDataCategory",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.priorities.set-platform",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/priorities/setPlatform",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.priorities.set-technique",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/priorities/setTechnique",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.priorities.set-threat-group",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/priorities/setThreatGroup",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.priorities.update-onboarding-state",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/priorities/updateOnboardingState",
+      "query_params": [
+        "onboardingState"
+      ],
+      "request_body": false,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.priorities.update-org-onboarding-info",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/priorities/updateOrgOnboardingInfo",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.proposal.snooze",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/proposal/snooze",
+      "query_params": [],
+      "request_body": false,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.proposal.update-rule-mode",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/proposal/updateRuleMode",
+      "query_params": [],
+      "request_body": false,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.recommendation.feedback",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/recommendation/feedback",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "post.api.recommendation.list",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/recommendation/list",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "post.api.recommendation.rules",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/recommendation/rules",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.recommendation.snooze",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/recommendation/snooze",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.recommendation.tech-recommendations",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/recommendation/techRecommendations",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "post.api.search.armory-list-view",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/armoryListView",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.search.armory-topic-pack-details",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/armoryTopicPackDetails",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.search.cvequery",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/cvequery",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "post.api.search.data-feeds-list-view",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/dataFeedsListView",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.search.dependent-contents-details",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/dependentContentsDetails",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "post.api.search.identifier-list-view",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/identifierListView",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "post.api.search.macro-list-view",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/macroListView",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.search.maturity-score-fqn-deployed-reco-counts",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/maturityScoreFqnDeployedRecoCounts",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.search.maturity-score-query",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/maturityScoreQuery",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "post.api.search.query",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/query",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "post.api.search.scenario-group-query",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/scenariogroupquery",
+      "query_params": [
+        "summary"
+      ],
+      "request_body": true,
+      "risk": "bulk"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "post.api.search.scenario-list-view",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/scenarioListView",
+      "query_params": [],
+      "request_body": true,
+      "risk": "bulk"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.search.scenariosearchquery",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/scenariosearchquery",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.search.stagegroupquery",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/stagegroupquery",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "post.api.search.topics-packs-list-view",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/topicsPacksListView",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.task.create",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/task/create",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.task.delete",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/task/delete",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.task.update",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/task/update",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.trusted-groups.create",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/trustedGroups/create",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.trusted-groups.delete",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/trustedGroups/delete",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.trusted-groups.edit-group",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/trustedGroups/editGroup",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.trusted-groups.handle-unsolicited-requests",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/trustedGroups/handleUnsolicitedRequests",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.trusted-groups.invite",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/trustedGroups/invite",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.trusted-groups.remove-org",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/trustedGroups/removeOrg",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.trusted-groups.remove-self",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/trustedGroups/removeSelf",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.trusted-groups.request-to-join",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/trustedGroups/requestToJoin",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.trusted-groups.revoke-join-request",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/trustedGroups/revokeJoinRequest",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.trusted-groups.revoke-sent-invitation",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/trustedGroups/revokeSentInvitation",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.trusted-groups.revoke-sent-proposal",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/trustedGroups/revokeSentProposal",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.ttp.create-platform",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/ttp/createPlatform",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.ttp.create-technique",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/ttp/createTechnique",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.ttp.create-threat-group",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/ttp/createThreatGroup",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.unified-detect.cancel-query",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/unifiedDetect/cancelQuery",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.unified-detect.code-preview",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/unifiedDetect/codePreview",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.unified-detect.connect",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/unifiedDetect/connect",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.unified-detect.delete-azure",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/unifiedDetect/deleteAzure",
+      "query_params": [
+        "reportOnly"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.unified-detect.fetch-events",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/unifiedDetect/fetchEvents",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.unified-detect.setup-azure",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/unifiedDetect/setupAzure",
+      "query_params": [
+        "wait"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.unified-detect.setup-azure-status",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/unifiedDetect/setupAzureStatus",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.unified-detect.setup-databricks",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/unifiedDetect/setupDatabricks",
+      "query_params": [
+        "wait"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.unified-detect.setup-snowflake",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/unifiedDetect/setupSnowflake",
+      "query_params": [
+        "wait"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.unified-detect.view-events",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/unifiedDetect/viewEvents",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.unified-detect.view-schema",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/unifiedDetect/viewSchema",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.api.user.logout",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/user/logout",
+      "query_params": [],
+      "request_body": false,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.allowlist.custom-field",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/allowlist/custom_field",
+      "query_params": [
+        "org"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.allowlist.custom-field.msp",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/allowlist/custom_field/msp",
+      "query_params": [
+        "orgs"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.allowlist.global-entry",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/allowlist/global_entry",
+      "query_params": [
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.allowlist.global-entry.msp",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/allowlist/global_entry/msp",
+      "query_params": [
+        "auto_create_fields",
+        "orgs",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.allowlist.import",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/allowlist/import",
+      "query_params": [],
+      "request_body": false,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.allowlist.rule-entry",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/allowlist/rule_entry",
+      "query_params": [
+        "auto_create_custom_fields",
+        "auto_create_fields",
+        "org",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.allowlist.rule-entry.bulk",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/allowlist/rule_entry/bulk",
+      "query_params": [
+        "auto_create_custom_fields",
+        "auto_create_fields",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "post.services.case.aggregate.by-age",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/aggregate/by_age",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "post.services.case.aggregate.by-category",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/aggregate/by_category",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "post.services.case.aggregate.by-priority",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/aggregate/by_priority",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "post.services.case.aggregate.by-status",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/aggregate/by_status",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.case.by-case-id.event.add",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/{case_id}/event/add",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.case.by-case-id.event.validate",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/{case_id}/event/validate",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.case.create",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/create",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "post.services.case.search",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/search",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.insights.health",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/insights/health",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.insights.hunting",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/insights/hunting",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.insights.hunting.automation.escalate",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/insights/hunting/automation/escalate",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.insights.hunting.by-id.escalate",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/insights/hunting/{id}/escalate",
+      "query_params": [],
+      "request_body": false,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.insights.tuning",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/insights/tuning",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.insights.tuning.automation.accept",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/insights/tuning/automation/accept",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.insights.tuning.by-id.accept",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/insights/tuning/{id}/accept",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.insights.tuning.by-id.dismiss",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/insights/tuning/{id}/dismiss",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.monte.copilot.analysis.entity",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/monte/copilot/analysis/entity",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.monte.copilot.analysis.threat-identifier",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/monte/copilot/analysis/threat_identifier",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.monte.copilot.analysis.threat-identifier.factsheet",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/monte/copilot/analysis/threat_identifier/factsheet",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.monte.copilot.analysis.threat-scenario",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/monte/copilot/analysis/threat_scenario",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.org.by-org-id.insights.setup",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/org/{org_id}/insights/setup",
+      "query_params": [],
+      "request_body": false,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "post.services.triage.alert.aggregate.by-severity",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/aggregate/by_severity",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "post.services.triage.alert.aggregate.by-status",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/aggregate/by_status",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "post.services.triage.alert.aggregate.topn-coi-fields",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/aggregate/topn_coi_fields",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.triage.alert.automation",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/automation",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.triage.alert.by-alert-id.comment",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/{alert_id}/comment",
+      "query_params": [
+        "mode"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.triage.alert.by-alert-id.report.feedback",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/{alert_id}/report/feedback",
+      "query_params": [
+        "mode"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.triage.alert.by-alert-id.report.regenerate",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/{alert_id}/report/regenerate",
+      "query_params": [
+        "mode"
+      ],
+      "request_body": false,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.triage.alert.custom-status",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/custom_status",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi",
+        "distilled-private-traffic"
+      ],
+      "id": "post.services.triage.alert.search",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/search",
+      "query_params": [
+        "mode",
+        "orgs"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "post.services.triage.alert.summary-count",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/summary/count",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.triage.analyzer.automation",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/analyzer/automation",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.triage.settings.audit",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/settings/audit",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.triage.settings.audit.export",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/settings/audit/export",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.triage.suppression",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/suppression",
+      "query_params": [
+        "alert_id"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.triage.suppression.msp",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/suppression/msp",
+      "query_params": [
+        "orgs"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.v1.eois.summary",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/v1/eois/summary",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "post.services.v2.eois.get-details",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/v2/eois/get-details",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "post.strix.blueprint.search",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/strix/ai/mgmt/v2/blueprint/search",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence": [
+        "distilled-private-traffic"
+      ],
+      "id": "post.strix.session.search",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/strix/ai/sessions/v2/session/search",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "put.api.ttp.update-platforms",
+      "last_verified": "2026-09-22",
+      "method": "PUT",
+      "path": "/api/ttp/updatePlatforms",
+      "query_params": [
+        "deleteTechs",
+        "techChanged"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "put.api.ttp.update-techniques",
+      "last_verified": "2026-09-22",
+      "method": "PUT",
+      "path": "/api/ttp/updateTechniques",
+      "query_params": [
+        "addedTactics",
+        "deletedPlats",
+        "deletedTactics",
+        "deletedTgs",
+        "platChanged",
+        "tgChanged"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "put.api.ttp.update-threat-groups",
+      "last_verified": "2026-09-22",
+      "method": "PUT",
+      "path": "/api/ttp/updateThreatGroups",
+      "query_params": [
+        "deleteTechs",
+        "techChanged"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "put.services.allowlist.global.fields",
+      "last_verified": "2026-09-22",
+      "method": "PUT",
+      "path": "/services/allowlist/global/fields",
+      "query_params": [
+        "org",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "put.services.allowlist.global.fields.msp",
+      "last_verified": "2026-09-22",
+      "method": "PUT",
+      "path": "/services/allowlist/global/fields/msp",
+      "query_params": [
+        "orgs",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "put.services.allowlist.rule.by-rule-id.fields",
+      "last_verified": "2026-09-22",
+      "method": "PUT",
+      "path": "/services/allowlist/rule/{rule_id}/fields",
+      "query_params": [
+        "org",
+        "origin",
+        "splunk_user",
+        "sync_to_splunk"
+      ],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "put.services.insights.hunting.automation.escalate.by-id",
+      "last_verified": "2026-09-22",
+      "method": "PUT",
+      "path": "/services/insights/hunting/automation/escalate/{id}",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "put.services.insights.tuning.automation.accept.by-id",
+      "last_verified": "2026-09-22",
+      "method": "PUT",
+      "path": "/services/insights/tuning/automation/accept/{id}",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "put.services.platform.setting.by-setting-name",
+      "last_verified": "2026-09-22",
+      "method": "PUT",
+      "path": "/services/platform/setting/{setting_name}",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "publicly-documented",
+      "evidence": [
+        "public-openapi"
+      ],
+      "id": "put.services.setting.by-setting-name",
+      "last_verified": "2026-09-22",
+      "method": "PUT",
+      "path": "/services/setting/{setting_name}",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    }
+  ],
+  "source": {
+    "contract_status": "public_openapi_authoritative_for_documented_wire_facts",
+    "kind": "distilled_operation_fact_registry",
+    "private_evidence_provenance": "distilled private traffic",
+    "private_evidence_retained": false,
+    "public_openapi": {
+      "retrieved": "2026-09-22",
+      "sha256": "0e96b604ed12ef29007b38f209855f9a5577ae198ee330fa06692ddf876f884c",
+      "title": "Search API Manual Documentation",
+      "url": "https://openapi.gitbook.com/o/j9GRuNhp1hds6GRILKW4/spec/anvilogic-combined-apis.yaml",
+      "version": "8.1.0.0"
+    }
+  },
+  "version": 3
+}

@@ -1,0 +1,29 @@
+{
+  "facets": {},
+  "hits": {
+    "TS-1": {
+      "modification_time": 200,
+      "use_case_id": "TS-1",
+      "use_case_title": "Synthetic scenario one"
+    }
+  },
+  "listViewCounts": {},
+  "searchMetadata": {
+    "currPageResults": 1,
+    "numPages": 2,
+    "pageNum": 1,
+    "paginationTotal": 2,
+    "query": "",
+    "reqDocsPerPage": 1,
+    "searchTime": 1,
+    "sortCriteria": {
+      "sortOptions": {
+        "modification_time:latest": "Newest"
+      },
+      "sortedBy": {
+        "modification_time:latest": "DESC"
+      }
+    },
+    "totalResults": 2
+  }
+}
