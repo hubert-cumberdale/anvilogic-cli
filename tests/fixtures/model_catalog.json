@@ -1,0 +1,35 @@
+{
+  "components": {
+    "schemas": {
+      "AddCommentRequest": {
+        "properties": {
+          "comment": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "parent_comment_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "comment"
+        ],
+        "type": "object"
+      },
+      "ApiKeySpec": {
+        "description": "Synthetic API key configuration used by local tests.",
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        },
+        "type": "object"
+      }
+    }
+  },
+  "info": {
+    "title": "Synthetic test model catalog",
+    "version": "test-1"
+  },
+  "openapi": "3.0.0"
+}

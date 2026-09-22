@@ -1,0 +1,22 @@
+{
+  "artifact": {
+    "name": "threat_scenarios.jsonl",
+    "records": 2,
+    "representation": "UTF-8 compact JSON with sorted keys and one LF-terminated object per line",
+    "sha256": "9f6aa972b01e7f2a0063432272db4530a45d46113d55e85085b805cdf2abc139"
+  },
+  "counts": {
+    "attack_mappings": 3,
+    "identifier_memberships": 3,
+    "platform_mappings": 2,
+    "scenarios": 2,
+    "stages": 3,
+    "unique_identifiers": 2
+  },
+  "record_schema": {
+    "id": "urn:anvilogic-cli:threat-scenario-record:1",
+    "sha256": "15cb61e7833a261423781af4478d59779371748961b2ef5cbcb5a66c8601392d",
+    "version": 1
+  },
+  "schema_version": 1
+}

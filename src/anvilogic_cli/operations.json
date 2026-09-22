@@ -1,0 +1,874 @@
+{
+  "operations": [
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.analytic.rule-info",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/ruleInfo",
+      "query_params": [
+        "ruleid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.analytic.rule-stats",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/ruleStats",
+      "query_params": [
+        "hash",
+        "ruleid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.analytic.rule-version",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/ruleVersion",
+      "query_params": [
+        "hash",
+        "ruleid",
+        "type"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.analytic.rule-versions",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/ruleVersions",
+      "query_params": [
+        "ruleid",
+        "type"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.analytic.use-case",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/useCase",
+      "query_params": [
+        "usecaseid"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.analytic.use-case-counts",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/analytic/useCaseCounts",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.audit.recently-viewed",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/audit/recentlyViewed",
+      "query_params": [
+        "limit"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.authentication.version",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/authentication/version",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.collab.comments",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/collab/comments",
+      "query_params": [
+        "id",
+        "objType",
+        "since"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.info.organization-details",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/info/organizationDetails",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.info.user",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/info/user",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.notification.list",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/notification/list",
+      "query_params": [
+        "since"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.org.list-siem-configs",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/org/listSiemConfigs",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.org.relations",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/org/relations",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.priorities.detections-coverage",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/detectionsCoverage",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.priorities.get",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/get",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.priorities.get-score",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/getScore",
+      "query_params": [
+        "incRuleFeedInfo"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.priorities.supported-data-categories",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/priorities/supportedDataCategories",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.proposal.list",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/proposal/list",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.task.inventory",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/task/inventory",
+      "query_params": [
+        "limit",
+        "offset"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.task.list",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/task/list",
+      "query_params": [
+        "limit",
+        "offset",
+        "orgView",
+        "taskStatus"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.trusted-groups.list-owned-by",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/trustedGroups/listOwnedBy",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.api.ttp.get-ttp-info",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/api/ttp/getTtpInfo",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.pipelines.jobs",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/pipelines/v1/jobs",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.pipelines.supported",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/pipelines/v1/supported",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.ai.copilot.tools",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/ai/agent/copilot/tools",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.ai.search-agent.tools",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/ai/agent/search_agent/tools",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.allowlist.rule",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/allowlist/rule",
+      "query_params": [
+        "limit",
+        "offset"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.case.metadata",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/case/metadata",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.feature-flag",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/feature-flag",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.fetch.eoi.check-org-existence",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/check-org-existence",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.fetch.eoi.spotlights",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/fetch/eoi/spotlights",
+      "query_params": [
+        "end_date",
+        "start_date",
+        "status"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.insights.health",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/health",
+      "query_params": [
+        "end_date",
+        "start_date"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.insights.health-types",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/health/types",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.insights.hunting.latest-escalation",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/hunting/automation/escalate/latest",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.insights.hunting.types",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/hunting/types",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.insights.tuning.latest-acceptance",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/tuning/automation/accept/latest",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.insights.tuning.types",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/insights/tuning/types",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.monteai.copilot-license",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/monteai/copilot/license",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.msp.orgs.allowlist",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/msp/orgs/allowlist",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.msp.orgs.triage",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/msp/orgs/triage",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.platform.setting",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/platform/setting/{setting_name}",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.triage.alert.automation-metadata",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/automation/metadata",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.triage.alert.bulk-update-status",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/bulk_update_status",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.triage.alert.status",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/alert/status",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.triage.analyzer.automation-field-meta",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/triage/analyzer/automation/field_meta",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.tuning-recommendations.list",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/tuning-recommendations/list",
+      "query_params": [
+        "end_date",
+        "start_date"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.services.v1.eoi.schema",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/services/v1/eoi/schema",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.strix.connector.list",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/strix/ai/mgmt/v2/connector",
+      "query_params": [
+        "include_actions"
+      ],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.strix.connector.mcp-custom",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/strix/ai/mgmt/v2/connector/mcp/custom",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "get.waygate.connected",
+      "last_verified": "2026-09-22",
+      "method": "GET",
+      "path": "/waygate/connected",
+      "query_params": [],
+      "request_body": false,
+      "risk": "read"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.api.cloudapp.get-users",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/cloudapp/getUsers",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.api.recommendation.list",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/recommendation/list",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.api.recommendation.rules",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/recommendation/rules",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.api.search.armory-list-view",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/armoryListView",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.api.search.data-feeds-list-view",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/dataFeedsListView",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.api.search.identifier-list-view",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/identifierListView",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.api.search.macro-list-view",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/macroListView",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.api.search.query",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/query",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.api.search.scenario-list-view",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/scenarioListView",
+      "query_params": [],
+      "request_body": true,
+      "risk": "bulk"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.api.search.scenario-group-query",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/scenariogroupquery",
+      "query_params": [
+        "summary"
+      ],
+      "request_body": true,
+      "risk": "bulk"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.api.search.topics-packs-list-view",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/api/search/topicsPacksListView",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.services.case.aggregate.by-age",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/aggregate/by_age",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.services.case.aggregate.by-category",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/aggregate/by_category",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.services.case.aggregate.by-priority",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/aggregate/by_priority",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.services.case.aggregate.by-status",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/aggregate/by_status",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.services.case.search",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/case/search",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.services.triage.alert.aggregate.by-severity",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/aggregate/by_severity",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.services.triage.alert.aggregate.by-status",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/aggregate/by_status",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.services.triage.alert.aggregate.topn-coi-fields",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/aggregate/topn_coi_fields",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.services.triage.alert.search",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/search",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.services.triage.alert.summary-count",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/services/triage/alert/summary/count",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.strix.blueprint.search",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/strix/ai/mgmt/v2/blueprint/search",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    },
+    {
+      "confidence": "confirmed",
+      "evidence_class": "distilled-private-traffic",
+      "id": "post.strix.session.search",
+      "last_verified": "2026-09-22",
+      "method": "POST",
+      "path": "/strix/ai/sessions/v2/session/search",
+      "query_params": [],
+      "request_body": true,
+      "risk": "write"
+    }
+  ],
+  "source": {
+    "contract_status": "provisional_not_official",
+    "evidence_provenance": "private traffic",
+    "kind": "distilled_fact_registry",
+    "private_evidence_retained": false
+  },
+  "version": 2
+}
