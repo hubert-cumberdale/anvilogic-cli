@@ -1,0 +1,78 @@
+[build-system]
+requires = ["setuptools>=75,<84", "wheel>=0.44,<0.47"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anvilogic-cli"
+version = "0.3.4"
+description = "A security-focused, source-distributed command line client for the Anvilogic API."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Anvilogic CLI Maintainers" }]
+keywords = ["anvilogic", "cli", "openapi", "security"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Security",
+]
+dependencies = [
+    "click>=8.3.3,<8.4",
+    "httpx>=0.27,<0.29",
+    "jsonschema>=4.18,<5",
+    "PyYAML>=6.0.2,<7",
+    "rich>=13,<14",
+    "typer>=0.18,<0.19",
+]
+
+[project.urls]
+Homepage = "https://github.com/hubert-cumberdale/anvilogic-cli"
+Repository = "https://github.com/hubert-cumberdale/anvilogic-cli"
+Issues = "https://github.com/hubert-cumberdale/anvilogic-cli/issues"
+
+[project.optional-dependencies]
+dev = [
+    "mypy>=1.10,<2",
+    "pytest>=8,<10",
+    "ruff>=0.6,<0.7",
+    "setuptools>=75,<84",
+    "types-PyYAML>=6.0.12,<7",
+    "wheel>=0.44,<0.47",
+]
+
+[project.scripts]
+anvilogic = "anvilogic_cli.cli:app_main"
+avl = "anvilogic_cli.cli:app_main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+anvilogic_cli = ["operations.json", "threat_scenario_record.schema.json"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+cache-dir = "/tmp/avl-cli-ruff-cache"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "ARG"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/anvilogic_cli/cli.py" = ["B008"]
+
+[tool.mypy]
+python_version = "3.10"
+check_untyped_defs = true
+ignore_missing_imports = true
+no_implicit_optional = true
+warn_unused_ignores = true
+warn_return_any = true
+
+[tool.pytest.ini_options]
+cache_dir = "/tmp/avl-cli-pytest-cache"
+testpaths = ["tests"]

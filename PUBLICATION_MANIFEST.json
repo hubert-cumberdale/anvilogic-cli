@@ -1,0 +1,22 @@
+{
+  "distribution_policy": "source-only GitHub prerelease; no package assets or PyPI",
+  "history_policy": "single sanitized source snapshot; no private git history",
+  "public_repo": "hubert-cumberdale/anvilogic-cli",
+  "schema_version": 1,
+  "source_commit": "598e8795bfcfa355b19a2a6ca75db5098320b3e0",
+  "source_commit_time": "2026-09-23T11:55:45-04:00",
+  "source_ref": "v0.3.4",
+  "source_snapshot": "git-archive",
+  "tree_sha256": "95ba2d7109d11051452f6c5281284dafa0e55739795ab41dee81f0c6338c99b2",
+  "tree_sha256_excludes": [
+    "PUBLICATION_MANIFEST.json",
+    ".git/"
+  ],
+  "validation_commands": [
+    "python3 scripts/check_secret_scan.py",
+    "python3 scripts/check_public_safety.py",
+    "python3 scripts/quality_gate.py",
+    "git rev-list --count HEAD"
+  ],
+  "version": "0.3.4"
+}
