@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.coverage
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+build/
+dist/
+site/
+
+# Local credentials, output, and editor state
+.env
+*.log
+*.response.json
+.idea/
+.vscode/
+.DS_Store
