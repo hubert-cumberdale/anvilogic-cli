@@ -1,0 +1,145 @@
+{
+  "$defs": {
+    "identifier": {
+      "additionalProperties": false,
+      "properties": {
+        "attack_ids": {
+          "items": {
+            "pattern": "^T[0-9]{4}(?:\\.[0-9]{3})?$",
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "behavioral_intent": {
+          "type": "string"
+        },
+        "id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "platforms": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "references": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "rule_ids": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "tactics": {
+          "items": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "title": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "behavioral_intent",
+        "attack_ids",
+        "tactics",
+        "platforms",
+        "references",
+        "rule_ids"
+      ],
+      "type": "object"
+    },
+    "stage": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "identifiers": {
+          "items": {
+            "$ref": "#/$defs/identifier"
+          },
+          "type": "array"
+        },
+        "name": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "order": {
+          "minimum": 1,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "order",
+        "id",
+        "name",
+        "identifiers"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:anvilogic-cli:threat-scenario-record:1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "platforms": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "schema_version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "stages": {
+      "items": {
+        "$ref": "#/$defs/stage"
+      },
+      "type": "array"
+    },
+    "title": {
+      "minLength": 1,
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "description",
+    "platforms",
+    "stages"
+  ],
+  "title": "Anvilogic threat-scenario export record v1",
+  "type": "object"
+}

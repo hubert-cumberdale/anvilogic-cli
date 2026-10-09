@@ -1,0 +1,38 @@
+{
+  "description": "Sanitized compatibility fixture for the version 1 export contract.",
+  "id": "TS-EXAMPLE-1",
+  "platforms": [
+    "Windows"
+  ],
+  "schema_version": 1,
+  "stages": [
+    {
+      "id": "stage-initial",
+      "identifiers": [
+        {
+          "attack_ids": [
+            "T1059.001"
+          ],
+          "behavioral_intent": "Exercise a synthetic command interpreter behavior.",
+          "id": "TI-EXAMPLE-1",
+          "platforms": [
+            "Windows"
+          ],
+          "references": [
+            "https://example.com/sanitized-reference"
+          ],
+          "rule_ids": [
+            "AVL_R1000"
+          ],
+          "tactics": [
+            "Execution"
+          ],
+          "title": "Synthetic command interpreter"
+        }
+      ],
+      "name": "Initial",
+      "order": 1
+    }
+  ],
+  "title": "Synthetic threat scenario"
+}

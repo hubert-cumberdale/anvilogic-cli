@@ -1,0 +1,170 @@
+# Architecture
+
+## Purpose and boundary
+
+The CLI provides secure generic HTTP access, local opt-in model tooling, reviewed operation facts,
+and one bounded threat-scenario exporter. The public package contains no model corpus and no raw
+endpoint evidence.
+
+```text
+operator
+   |
+   v
+cli.py ----------> config.py ----------> local config / environment
+   |                    |
+   |                    v
+   +--------------> invocation.py -----> client.py ---------> Anvilogic API
+   |                    |
+   |                    v
+   |                   io.py -----------> stdout / private output file
+   |
+   +--------------> documents.py ------> caller-supplied JSON/YAML
+   |                    ^
+   |                    |
+   +--------------> schemas.py ---------> caller-supplied model file
+   |
+   +--------------> contracts.py -------> caller-supplied full OpenAPI document
+   |
+   +--------------> adoption.py --------> aggregate fixture outcomes only
+   |
+   +--------------> operations.py ------> bundled distilled fact registry
+   |                         ^
+   |                         |
+   |              generate_operations.py <--- local pinned OpenAPI YAML
+   |
+   +--------------> cli_threat_scenarios.py
+                           |
+                           v
+                    threat_scenarios.py -> immutable bundled v1 record schema
+                           |
+                           +-------------> private normalized run artifacts
+
+tagged private commit
+   |
+   v
+create_public_mirror.py -> safety scan -> validation wheel -> manifest
+   |
+   v
+one-commit public main + lightweight version tag
+```
+
+- `cli.py` owns command parsing, explicit local-model requirements, and stable exits.
+- `invocation.py` owns request/model/contract validation order, apply gating, request preparation,
+  and transport orchestration while leaving response rendering and file writes to the CLI and
+  `io.py`.
+- `config.py` validates configuration, resolves environment precedence, and persists atomically
+  with restrictive permissions.
+- `client.py` builds relative URLs, manages authentication, redacts previews, disables redirects,
+  and retries only safe methods.
+- `documents.py` is the shared strict JSON/YAML loader. It provides YAML 1.2 scalar behavior,
+  duplicate-key and alias rejection, and an acyclic JSON-compatible result without fetching or
+  retaining inputs.
+- `schemas.py` accepts caller-supplied Markdown through its established parser and routes JSON,
+  YAML, and YML through `documents.py`; it provides model search, reference expansion, samples,
+  and JSON Schema validation.
+- `contracts.py` routes a full local OpenAPI 3.0.x JSON/YAML document through `documents.py`,
+  resolves operations by exact normalized method/path, permits only local JSON Pointer references,
+  and validates selected request and response JSON without runtime fetching. Its OpenAPI 3.0
+  adapter handles recursion, composition, nullable values, directional properties, and supported
+  constraints while rejecting unsupported validation keywords.
+- `adoption.py` evaluates versioned, sanitized request/response fixtures against reviewed
+  operation IDs and emits aggregate outcomes only. It imports no transport or persistence layer.
+- `operations.py` validates the bundled v4 mixed-evidence fact registry, resolves path parameters,
+  and restricts named invocation to reviewed query names.
+- `generate_operations.py` verifies the exact reviewed public OpenAPI bytes and the independently
+  pinned `v0.3.3` registry seed, derives collision-free IDs and body requiredness, and emits no
+  schemas.
+- `io.py` handles repeatable arguments, deterministic response formatting, and private file writes.
+- `threat_scenarios.py` owns fail-closed collection, normalization, v1 record validation, findings,
+  hashes, and private artifact output.
+- `check_secret_scan.py` reports secret-shaped findings without reproducing candidate values.
+- `check_public_safety.py` scans every tracked source file and every regular wheel/sdist member,
+  regardless of extension or size, for forbidden artifacts, raw captures, private paths/hosts,
+  and secret patterns.
+- `create_public_mirror.py` requires a clean lightweight tag at the private authority branch tip,
+  exports it outside the private repository, verifies the public boundary, builds a
+  validation-only wheel, writes a deterministic manifest, and initializes a one-commit `main`.
+
+## Request flow
+
+1. Resolve and validate effective configuration.
+2. If validation is explicitly requested, require and load either the caller's manual model
+   catalog or, for named operation validation, a full local OpenAPI 3.0.x document.
+3. Parse query, header, and body input and reject ambiguous or unsafe forms.
+4. Validate a request body when requested.
+5. Build one request plan with managed authentication headers.
+6. Stop at a redacted preview for `--dry-run` or any non-safe method lacking `--apply`.
+7. Send with TLS verification, timeout, redirect suppression, and safe-method retries.
+8. Validate a response when requested, then emit deterministic JSON or raw bytes.
+
+Named `invoke` adds fact-registry lookup, path/query allowlisting, body-presence enforcement, and
+optional exact operation-contract validation before this flow. Registry entries have no model
+bindings. Response validation is available only when a request will be sent. Every POST, PUT,
+PATCH, and DELETE remains apply-gated and non-retried because documentation or search-like
+behavior does not prove absence of effects.
+
+## Offline adoption flow
+
+`adoption assess` loads an operator-controlled contract and sanitized fixture document through the
+same strict document boundary, resolves only bundled reviewed operation IDs, and validates each
+fixture in memory. Payload issues and contract-resolution errors are reduced immediately to
+`valid`, `invalid`, or `unusable` counters. The command exposes no base URL, credentials, network
+client, raw diagnostics, output path, or per-operation report, so supplied documents and payloads
+cannot be transmitted or persisted by the harness.
+
+## Threat-scenario exporter
+
+The exporter remains limited to three reviewed operations. Scenario list pages must reconcile the
+requested page and size, current count, page count, total results, requested sort, hit IDs, and
+unique count. Two complete list sweeps must produce identical scenario-ID-to-modification-time
+mappings and stable metadata. The collector records whether source page ranges were descending but
+does not rely on that property; it orders the stable snapshot locally. Each scenario's full detail
+is submitted once for group membership. Ordered detail stages resolve through their explicit group
+references to the returned identifier memberships; stage definitions, group definitions,
+references, per-group membership uniqueness, and exact totals must reconcile. Identifiers shared
+by multiple groups are emitted once in their stage-level union. A collection may restart once on
+drift. Every listed item's detail is inspected; details without a `threatScenario` object are
+classified before group lookup, recorded in private findings, and counted in the manifest source.
+Group-proven identifiers with 403/404 detail responses retain placeholder membership and produce
+private findings; no other HTTP failure is downgraded. Canonical ATT&CK tokens are extracted from
+dedicated fields and the allowlisted identifier description without technique-name inference. All
+normalized records validate before the output directory is created, and the manifest binds the
+output to the immutable v1 schema bytes.
+
+## Offline AttackIQ reconciliation boundary
+
+Cross-product coverage remains a downstream file composition rather than an Anvilogic network
+feature. This CLI owns collection completeness and the immutable v1 producer contract. AttackIQ
+CLI owns its scenario export, canonical platform handling, candidate matching, private plan, and
+any separately authorized mutation. The handoff contains no credentials or raw response envelopes.
+
+The central platform team owns cross-tool sequencing, compatible tool refs, approvals, recovery,
+and acceptance in its private security-platform handbook. This repository maintains the
+[public-safe integration summary](ATTACKIQ_COVERAGE_WORKFLOW.md) and the technical contracts for
+its producer and offline utilities.
+
+The repository-only catalog verifier compares two private AttackIQ catalogs for identical unique
+IDs, modification values, tag inputs, and platform inputs, and emits aggregate state only. This
+checks the stability of planner inputs without establishing catalog visibility or completeness.
+The downstream offline join considers exact canonical ATT&CK ID plus platform a candidate match;
+it cannot establish behavioral equivalence. Gaps with canonical metadata may enter a private
+Daybreak review queue; records without ATT&CK IDs remain metadata-remediation work. Model calls,
+content promotion, uploads, assessment application, targets, schedules, and execution stay outside
+this boundary.
+
+The repository-only pilot preparation script is a second offline consumer boundary. It revalidates
+the complete collection and reconciliation hash chains, repeated AttackIQ projection, terminal
+states, packet topology, and private permissions before selecting anything. Its fixed platform
+quotas, scarcity-first gap ranking, and same-platform positive-control pairing are deterministic.
+It creates a private atomic package for human calibration and can consume a fingerprint-bound prior
+worksheet to remove false gaps and replenish the same quota. It has no transport dependency, is not
+installed as a public CLI, and cannot authorize or perform model, upload, assessment, target,
+schedule, or execution operations.
+
+## Public mirror integrity
+
+The private repository is authoritative. The mirror manifest records the private source ref and
+commit, commit time, package version, deterministic tree digest, history policy, and distribution
+policy. The digest covers each path and file digest in lexical order and excludes only the manifest
+itself and `.git/`. The public repository begins with one synthetic release commit, so no private
+parent, branch, tag, or deleted artifact is reachable.
